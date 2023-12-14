@@ -1,0 +1,62 @@
+---
+format:
+  html: default
+filters:
+  - rich-iannone/quarto-email
+---
+
+## Profit Report
+
+```{r}
+#| echo: false
+
+profit <- runif(1, min = -1, max = 1)
+
+profit_override <- Sys.getenv("PROFIT_OVERRIDE")
+
+if (profit < 0 | profit_override == "TRUE") {
+
+  # Send email since we have a reason for it
+
+  subject <- "We have a problem here"
+  send_email <- TRUE
+
+} else {
+
+  # Don't send email; everything is fine
+
+  subject <- "No email. This won't be sent"
+  send_email <- FALSE
+}
+```
+
+
+Our profit was `r profit`.
+
+
+The email body follows.
+
+
+::: {.email}
+
+Our profit was `r profit` this quarter and we felt you should know.
+
+::: {.subject}
+`r subject`
+:::
+
+::: {.email-scheduled}
+`r send_email`
+:::
+
+:::
+
+### Logging info
+
+Report run: `r Sys.time()`
+
+Email sent? `r send_email`
+
+Subject: `r subject`
+
+Body: *TODO: use different bodies to insert conditionality*
