@@ -1,0 +1,4 @@
+- source: document.qmd
+  connect:
+    - id: 427800bf-0f66-45b7-9509-8da5face31f8
+      url: 'https://colorado.posit.co/daily-connect/content/427800bf-0f66-45b7-9509-8da5face31f8/'

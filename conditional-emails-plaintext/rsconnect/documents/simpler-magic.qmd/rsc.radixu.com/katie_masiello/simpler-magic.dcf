@@ -1,0 +1,14 @@
+name: simpler-magic
+title: simpler-magic
+username: katie_masiello
+account: katie_masiello
+server: rsc.radixu.com
+hostUrl: https://rsc.radixu.com/__api__
+appId: 34460
+bundleId: 69379
+url: https://rsc.radixu.com/content/c1084bf9-b957-4a33-aa00-257ab415e3cf/
+version: 1
+quarto_version: 1.3.450
+quarto_engines: knitr
+asMultiple: FALSE
+asStatic: FALSE

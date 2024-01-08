@@ -1,0 +1,14 @@
+name: document2
+title: document
+username: katie.masiello
+account: katie.masiello
+server: colorado.posit.co
+hostUrl: https://colorado.posit.co/daily-connect/__api__
+appId: 208
+bundleId: 246
+url: https://colorado.posit.co/daily-connect/content/eb8fe44e-d820-450c-a517-48069c19726a/
+version: 1
+quarto_version: 1.4.504
+quarto_engines: knitr
+asMultiple: FALSE
+asStatic: FALSE

@@ -1,0 +1,71 @@
+---
+title: test conditional emails
+format: email
+email-preview: true
+---
+
+```{python}
+#| echo: false
+import yaml
+from IPython.display import Markdown
+def quarto_metadata(**kwargs):
+    result = "---\n" + yaml.safe_dump(kwargs) + "---\n"
+    return Markdown(result)
+```
+
+```{python}
+import random
+variant = int(random.random() * 3) + 1
+opts = {}
+opts["is_email_variant_"+ str(variant)] = True
+quarto_metadata(**opts)
+```
+
+
+::: {.email}
+
+This email was sent from Quarto! With conditional output for condition `r variant`
+
+::: {.content-visible when-meta="is_email_variant_1"}
+
+email body 1
+
+```{r}
+head(mtcars)
+```
+
+::: {.subject}
+subject 1
+:::
+
+
+
+:::
+
+
+::: {.content-visible when-meta="is_email_variant_2"}
+
+email body 2 
+
+```{r}
+head(palmerpenguins::penguins)
+```
+
+::: {.subject}
+subject 2
+:::
+
+
+:::
+
+::: {.content-visible when-meta="is_email_variant_3"}
+
+email body 3
+
+```{r}
+praise::praise()
+```
+
+::: {.subject}
+subject 3
+:::

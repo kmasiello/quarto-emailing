@@ -1,0 +1,14 @@
+name: conditionality2
+title: conditionality
+username: katie.masiello
+account: katie.masiello
+server: colorado.posit.co
+hostUrl: https://colorado.posit.co/daily-connect/__api__
+appId: 209
+bundleId: 247
+url: https://colorado.posit.co/daily-connect/content/d6249e50-62d7-4697-b671-d1d7b3a1a884/
+version: 1
+quarto_version: 1.4.504
+quarto_engines: knitr
+asMultiple: FALSE
+asStatic: FALSE

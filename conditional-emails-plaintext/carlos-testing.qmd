@@ -1,0 +1,24 @@
+---
+title: "Quarto Playground"
+format: html
+---
+	
+This is a playground for Quarto.
+
+	
+
+```{r}
+#| output: asis
+cat(
+  "---",
+  "option: false",
+  "---",
+  sep = "\n"
+)
+```
+
+::: {.content-hidden unless-meta="option"}
+
+This content will be hidden unless there exists a metadata entry like such:
+
+:::

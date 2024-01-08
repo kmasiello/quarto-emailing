@@ -1,0 +1,14 @@
+name: magic
+title: magic
+username: katie.masiello
+account: katie.masiello
+server: colorado.posit.co
+hostUrl: https://colorado.posit.co/rsc/__api__
+appId: 18927
+bundleId: 87696
+url: https://colorado.posit.co/rsc/content/94506611-d732-46ca-963b-76cd4e7e99ce/
+version: 1
+quarto_version: 1.3.450
+quarto_engines: jupyter
+asMultiple: FALSE
+asStatic: FALSE
